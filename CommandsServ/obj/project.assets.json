@@ -1010,26 +1010,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\doormamy\\.nuget\\packages\\": {}
+    "C:\\Users\\аапм\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\doormamy\\Desktop\\c#\\CommandsServ\\CommandsServ.csproj",
+      "projectUniqueName": "C:\\Users\\аапм\\Desktop\\C#\\MicroserviceFirst\\CommandsServ\\CommandsServ.csproj",
       "projectName": "CommandsServ",
-      "projectPath": "C:\\Users\\doormamy\\Desktop\\c#\\CommandsServ\\CommandsServ.csproj",
-      "packagesPath": "C:\\Users\\doormamy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\doormamy\\Desktop\\c#\\CommandsServ\\obj\\",
+      "projectPath": "C:\\Users\\аапм\\Desktop\\C#\\MicroserviceFirst\\CommandsServ\\CommandsServ.csproj",
+      "packagesPath": "C:\\Users\\аапм\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\аапм\\Desktop\\C#\\MicroserviceFirst\\CommandsServ\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\doormamy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\аапм\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1093,7 +1091,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
