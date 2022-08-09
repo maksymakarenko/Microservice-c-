@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: platforms-deployment 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mymicro
+  template:
+    metadata:
+      labels:
+        app: mymicro
+    spec:
+      containers:
+        - name: mymicro
+          image: doormamy/mymicro:latest
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: platforms-cluster
+spec:
+  type: ClusterIP
+  selector:
+    app: mymicro
+  ports:
+  - name: mymicro
+    protocol: TCP
+    port: 80
+    targetPort: 80

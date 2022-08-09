@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: com-deployment 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: commandsserv
+  template:
+    metadata:
+      labels:
+        app: commandsserv
+    spec:
+      containers:
+        - name: commandsserv
+          image: doormamy/commandsserv:latest
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: com-cluster
+spec:
+  type: ClusterIP
+  selector:
+    app: commandsserv
+  ports:
+  - name: commandsserv
+    protocol: TCP
+    port: 80
+    targetPort: 80

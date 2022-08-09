@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "bn1++OxeqauEA+VvLQzaghd9+LZ6wmAaYu5u39n4Zbg=",
+  "Source": "CommandsServ",
+  "BasePath": "_content/CommandsServ",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
