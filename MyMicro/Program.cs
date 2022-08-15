@@ -1,5 +1,3 @@
-using Microsoft.Extensions.Hosting;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using MyMicro.Data;
 using MyMicro.SyncDS.Http;

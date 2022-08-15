@@ -70,3 +70,4 @@ C:\Users\аапм\Desktop\C#\MicroserviceFirst\CommandsServ\obj\Debug\net6.0\ref
 C:\Users\аапм\Desktop\C#\MicroserviceFirst\CommandsServ\obj\Debug\net6.0\CommandsServ.pdb
 C:\Users\аапм\Desktop\C#\MicroserviceFirst\CommandsServ\obj\Debug\net6.0\CommandsServ.genruntimeconfig.cache
 C:\Users\аапм\Desktop\C#\MicroserviceFirst\CommandsServ\obj\Debug\net6.0\ref\CommandsServ.dll
+C:\Users\аапм\Desktop\C#\MicroserviceFirst\CommandsServ\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

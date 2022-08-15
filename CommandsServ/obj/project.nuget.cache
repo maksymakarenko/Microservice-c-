@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "MIqWpIab4NFaV77jRRgXkOR7qT3Ni6RgPWURu7PJ0G1qTwQY66/PYXH39lBNfA6ikQ6DBOuYiP7AA8E1NnHWTQ==",
+  "dgSpecHash": "AJ4EFysylqDHzS2I6FYekK1sJK5sGTc9cYnVni4kCSsc+GtLsWzHvWqW9FyhMa8FdWC075zETH8l/Zh55K7jSQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\аапм\\Desktop\\C#\\MicroserviceFirst\\CommandsServ\\CommandsServ.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\аапм\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\аапм\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\аапм\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\аапм\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\аапм\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.7\\microsoft.entityframeworkcore.6.0.7.nupkg.sha512",
