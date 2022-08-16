@@ -28,13 +28,9 @@ namespace MyMicro.SyncDS.Http
             );
 
             if(respond.IsSuccessStatusCode)
-            {
                 Console.WriteLine("--> Sync Post to ComData OK");
-            }
             else
-            {
                 Console.WriteLine("--> Sync Post to ComData ERROR");
-            }
         }
     }
 }

@@ -71,3 +71,5 @@ C:\Users\аапм\Desktop\C#\MicroserviceFirst\CommandsServ\obj\Debug\net6.0\Com
 C:\Users\аапм\Desktop\C#\MicroserviceFirst\CommandsServ\obj\Debug\net6.0\CommandsServ.genruntimeconfig.cache
 C:\Users\аапм\Desktop\C#\MicroserviceFirst\CommandsServ\obj\Debug\net6.0\ref\CommandsServ.dll
 C:\Users\аапм\Desktop\C#\MicroserviceFirst\CommandsServ\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\аапм\Desktop\C#\MicroserviceFirst\CommandsServ\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\аапм\Desktop\C#\MicroserviceFirst\CommandsServ\bin\Debug\net6.0\appsettings.Production.json

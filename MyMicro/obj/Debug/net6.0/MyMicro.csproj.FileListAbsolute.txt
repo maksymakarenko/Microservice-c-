@@ -189,3 +189,4 @@ C:\Users\аапм\Desktop\C#\MicroserviceFirst\MyMicro\obj\Debug\net6.0\MyMicro.
 C:\Users\аапм\Desktop\C#\MicroserviceFirst\MyMicro\obj\Debug\net6.0\MyMicro.genruntimeconfig.cache
 C:\Users\аапм\Desktop\C#\MicroserviceFirst\MyMicro\obj\Debug\net6.0\ref\MyMicro.dll
 C:\Users\аапм\Desktop\C#\MicroserviceFirst\MyMicro\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\аапм\Desktop\C#\MicroserviceFirst\MyMicro\bin\Debug\net6.0\RabbitMQ.Client.dll

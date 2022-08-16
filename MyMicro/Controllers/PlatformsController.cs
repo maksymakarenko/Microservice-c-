@@ -1,5 +1,6 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using MyMicro.AsyncDS;
 using MyMicro.Data;
 using MyMicro.Dtos;
 using MyMicro.Models;
@@ -14,12 +15,14 @@ namespace MyMicro.Controllers
         private readonly IPlatformRepo _repository;
         private readonly IMapper _mapper;
         private readonly ICommandDataCli _commandDataCli;
+        private readonly IMessageBC _messageBC;
 
-        public PlatformsController(IPlatformRepo repository, IMapper mapper, ICommandDataCli commandDataCli)
+        public PlatformsController(IPlatformRepo repository, IMapper mapper, ICommandDataCli commandDataCli, IMessageBC messageBC)
         {
             _repository = repository;
             _mapper = mapper;
             _commandDataCli = commandDataCli;
+            _messageBC = messageBC;
         }
 
         [HttpGet]
@@ -61,6 +64,18 @@ namespace MyMicro.Controllers
             catch (System.Exception ex)
             {
                 Console.WriteLine($"--> Could not send sync: {ex}");
+            }
+
+            try
+            {
+                var paltformPublishedDto = _mapper.Map<PlatformPublishedDto>(platformReadDto);
+                paltformPublishedDto.Event = "PlatformISPublished";
+                _messageBC.PublishNewPlat(paltformPublishedDto);
+            }
+            catch (System.Exception ex)
+            {
+                
+                Console.WriteLine($"--> Could not send async: {ex}");
             }
 
             return CreatedAtRoute(nameof(GetPlatformById), new {Id = platformReadDto.Id}, platformReadDto);

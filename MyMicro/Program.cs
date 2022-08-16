@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using MyMicro.AsyncDS;
 using MyMicro.Data;
 using MyMicro.SyncDS.Http;
 
@@ -24,6 +25,7 @@ else
 // Add services to the container.
 
 builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
+builder.Services.AddSingleton<IMessageBC, MessageBC>();
 builder.Services.AddControllers();
 builder.Services.AddHttpClient<ICommandDataCli, HttpComDataCli>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
