@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using MyMicro.AsyncDS;
 using MyMicro.Data;
+using MyMicro.SyncDS.Grpc;
 using MyMicro.SyncDS.Http;
 
 
@@ -26,6 +27,7 @@ else
 
 builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 builder.Services.AddSingleton<IMessageBC, MessageBC>();
+builder.Services.AddGrpc();
 builder.Services.AddControllers();
 builder.Services.AddHttpClient<ICommandDataCli, HttpComDataCli>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -49,6 +51,16 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseEndpoints(endpoints => 
+{
+    endpoints.MapControllers();
+    endpoints.MapGrpcService<GrpcMyMicroService>();
+    endpoints.MapGet("/Protobufs/platform.proto", async context =>
+    {
+        await context.Response.WriteAsync(File.ReadAllText("Protobufs/platform.protos"));
+    });
+});
 
 PrepDb.PrepPopulation(app, env.IsProduction());
 

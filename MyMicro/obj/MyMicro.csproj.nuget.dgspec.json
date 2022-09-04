@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\аапм\\Desktop\\C#\\MicroserviceFirst\\MyMicro\\MyMicro.csproj": {}
+    "C:\\Users\\makar\\Desktop\\c#\\MicroserviceFirst\\MyMicro\\MyMicro.csproj": {}
   },
   "projects": {
-    "C:\\Users\\аапм\\Desktop\\C#\\MicroserviceFirst\\MyMicro\\MyMicro.csproj": {
+    "C:\\Users\\makar\\Desktop\\c#\\MicroserviceFirst\\MyMicro\\MyMicro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\аапм\\Desktop\\C#\\MicroserviceFirst\\MyMicro\\MyMicro.csproj",
+        "projectUniqueName": "C:\\Users\\makar\\Desktop\\c#\\MicroserviceFirst\\MyMicro\\MyMicro.csproj",
         "projectName": "MyMicro",
-        "projectPath": "C:\\Users\\аапм\\Desktop\\C#\\MicroserviceFirst\\MyMicro\\MyMicro.csproj",
-        "packagesPath": "C:\\Users\\аапм\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\аапм\\Desktop\\C#\\MicroserviceFirst\\MyMicro\\obj\\",
+        "projectPath": "C:\\Users\\makar\\Desktop\\c#\\MicroserviceFirst\\MyMicro\\MyMicro.csproj",
+        "packagesPath": "C:\\Users\\makar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\makar\\Desktop\\c#\\MicroserviceFirst\\MyMicro\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\аапм\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\makar\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -38,9 +38,35 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.21.5, )"
+            },
+            "Grpc.AspNetcore": {
+              "target": "Package",
+              "version": "[2.48.0, )"
+            },
+            "Grpc.Core": {
+              "target": "Package",
+              "version": "[2.46.3, )"
+            },
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.48.0, )"
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.48.1, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -75,7 +101,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -87,7 +114,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

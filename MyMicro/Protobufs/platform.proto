@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "MyMicro";
+
+service MyMicroService
+{
+    rpc GetAllMyMicros (GetAllRequest) returns (MyMicroResponse);
+}
+
+message GetAllRequest {}
+
+message MyMicroModel
+{
+    int32 platformId = 1;
+    string name = 2;
+    string publisher = 3;
+}
+
+message MyMicroResponse
+{
+    repeated MyMicroModel MyMicro = 1;
+}

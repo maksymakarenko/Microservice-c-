@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "Commands";
+
+service CommandsService
+{
+    rpc GetAllCommandss (GetAllRequest) returns (CommandsResponse);
+}
+
+message GetAllRequest {}
+
+message CommandsModel
+{
+    int32 CommandsId = 1;
+    string name = 2;
+    string publisher = 3;
+}
+
+message CommandsResponse
+{
+    repeated CommandsModel Commands = 1;
+}
